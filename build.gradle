@@ -50,3 +50,13 @@ dependencies {
 tasks.named('test') {
     useJUnitPlatform()
 }
+
+//@SpringBootApplication이 선언된 MainClass 설정
+bootJar {
+    mainClassName = 'com.tia.chatty.api.ApiApplication'
+}
+
+bootRun {
+    String activeProfile = System.properties['spring.profiles.active']
+    systemProperty "spring.profiles.active", activeProfile
+}
