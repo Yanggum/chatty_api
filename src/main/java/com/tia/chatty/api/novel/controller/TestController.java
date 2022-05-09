@@ -1,4 +1,4 @@
-package com.tia.chatty.api.controller;
+package com.tia.chatty.api.novel.controller;
 
 
 import org.springframework.web.bind.annotation.GetMapping;
